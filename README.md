@@ -25,31 +25,27 @@ The project follows a complete machine learning pipeline from text preprocessing
 
 ## Project Workflow
 
-```text
-IMDb Movie Reviews
-        │
-        ▼
-Data Cleaning & Preprocessing
-        │
-        ▼
-Text Tokenization
-        │
-        ▼
-GloVe Word Embeddings
-        │
-        ▼
-Model Training
- ┌───────────────┐
- │      ANN      │
- │      CNN      │
- │      LSTM     │
- └───────────────┘
-        │
-        ▼
-Model Evaluation
-        │
-        ▼
-Sentiment Prediction
+```mermaid
+flowchart LR
+
+A[IMDb Reviews Dataset]
+A --> B[Preprocessing]
+
+B --> C[Tokenization]
+
+C --> D[GloVe Embedding Layer]
+
+D --> E[Deep Learning Models]
+
+E --> F1[Artificial Neural Network]
+E --> F2[Convolutional Neural Network]
+E --> F3[Long Short-Term Memory]
+
+F1 --> G[Performance Evaluation]
+F2 --> G
+F3 --> G
+
+G --> H[Sentiment Classification]
 ```
 
 ---
@@ -57,6 +53,8 @@ Sentiment Prediction
 ## Dataset
 
 The project uses the **IMDb Movie Reviews Dataset**, containing thousands of labeled movie reviews for binary sentiment classification.
+
+**Dataset:** https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows
 
 Each review is classified as:
 
@@ -171,7 +169,8 @@ imdb-sentiment-analysis/
 │
 ├── imdb Sentiment Analysis.ipynb    # Complete implementation
 ├── requirements.txt                 # Project dependencies
-├── README.md                     
+├── README.md
+└── LICENSE                    
 ```
 
 ---
