@@ -4,7 +4,7 @@
 
 Natural Language Processing (NLP) has become an essential tool for understanding opinions expressed in text. This project explores sentiment classification on the IMDb Movie Reviews dataset by leveraging pre-trained word embeddings and multiple deep learning models to determine whether a review conveys a positive or negative sentiment.
 
-The project follows a complete machine learning pipeline—from text preprocessing and feature engineering to model training, evaluation, and prediction—providing a comprehensive comparison of different neural network architectures for sentiment analysis.
+The project follows a complete machine learning pipeline from text preprocessing and feature engineering to model training, evaluation, and prediction providing a comprehensive comparison of different neural network architectures for sentiment analysis.
 
 ---
 
